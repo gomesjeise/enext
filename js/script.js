@@ -6,14 +6,14 @@ function Get(url){
 }
 
 var state = JSON.parse(Get('./json/potions.json'));
-
+var bag = 0;
 function searchPotions(){
     clearCatalog();
-    
+    document.getElementById("bag").innerHTML = bag;
     document.getElementById("category").innerHTML = "Potions";
     var i= 1;
     for(i = 1; i <= 6; i++){
-        var p = '<div class="product" id="'+state.potions[i].id+'" onclick="openLigthbox(this.id)"><img src="img/products/'+state.potions[i].image+'"><p class="name">'+state.potions[i].name+' - </p><i class="red">$'+state.potions[i].price+'</i></div>'
+        var p = '<div class="product" id="'+state.potions[i].id+'" onclick="openLigthbox(this.id)"><img src="img/products/'+state.potions[i].image+'"><p class="name">'+state.potions[i].name+' - &nbsp<i class="red" style="font-weight: normal;">$'+state.potions[i].price+'</i></p></div>'
         
         document.getElementById("catalog").innerHTML += p;
     }
@@ -29,5 +29,6 @@ function openLigthbox(item){
 }
 
 function addBag(){
-    document.getElementById("bag").textContent += 1;
+    
+    document.getElementById("bag").innerHTML = bag++;
 }

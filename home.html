@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Merlin's Potions</title>
     <link href="css/style.css" rel="stylesheet">
@@ -16,14 +17,15 @@
             </div>
             <div class="search">
                 <form class="form-search"> 
-                   <input type="text" placeholder="Search our stock" alt="Search" class="input-search" src="img/search.png">
+                   <input type="text" placeholder="Search our stock" alt="Search" class="input-search">
                 </form>
             </div>
-            <div class="cart">
+            <div class="cart" id="cart">
                 <img src="img/free-shipping.PNG">
-                <img src="img/cauldron.PNG">
-                <p style="color: #b3b3b3"> BAG: </p>
-                <p id="bag" class="red"> 1 </p>
+                <img src="img/icons/cauldron.PNG">
+                <p style="color: #b3b3b3" onclick="addBag()"> BAG: </p>
+                <p id="bag" class="red"></p>
+                
             </div>
         </div>
         
@@ -57,13 +59,13 @@
                     <a class="menu-bottom-link" href="#">CAREERS</a>
                 </nav>
                 <div id="social-medias">
-                    <a> </a> 
-                    <a></a>
-                    <a> </a> 
-                    <a> </a> 
-                    <a> </a> 
+                    <a><img src="img/icons/facebook-logo-button.png"></a> 
+                    <a><img src="img/icons/twitter-logo-button.png"></a>
+                    <a><img src="img/icons/pinterest.png"></a> 
+                    <a><img src="img/icons/tumblr.png"></a> 
+                    <a><img src="img/icons/google-plus.png"></a> 
                 </div>
-                <p style="color: ;font-family: Oswald; " >2015 Merlin's Potions. All Rights Reserved.</p>
+                <p style="color: ;font-family: Oswald; " > &copy 2015 Merlin's Potions. All Rights Reserved.</p>
             </div>
         
             <div class="newsletter">
