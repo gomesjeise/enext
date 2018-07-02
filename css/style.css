@@ -1,7 +1,8 @@
 body{
-    margin: 0 0;
-    display: block;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Oswald', sans-serif;
 }
 .container{
@@ -9,6 +10,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2%;
+    background-color: #fff;
 }
 .logo{
 
@@ -47,3 +49,48 @@ body{
     red: d32c0e;
     roxo: 4f3166;
 }*/
+
+.content{
+    display: flex;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    
+}
+
+.catalog{
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+}
+
+.product img{
+    height: 150;
+    width: 150;
+}
+
+.product .name{
+    height: 30px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.footer{
+    height: 130px;
+    background-color: #eaeaea;
+}
+.red{
+    color: #d32c0e;
+}
