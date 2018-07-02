@@ -1,9 +1,14 @@
+@font-face {
+    font-family: DroidSans;
+    src: url(../fonts/droid-sans/DroidSans-Bold.ttf);
+}
+
 body{
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
 }
 .container{
     display: flex;
@@ -18,32 +23,39 @@ body{
 .input-search {
     background-image: url('../img/search.png');
     background-position: 10px;
-    background-size: 9%;
+    background-size: 6%;
     background-repeat: no-repeat;
     font-size: 14px;
     padding: 10px 45px 10px;
-    border: 2px solid #8a8787;
+    border: 1.5px solid #8a8787;
     border-radius: 5px;
+    width: 130%;
 }
 .cart{
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 20%;
 }
-.navmenu{
+.nav-menu{
     display: flex;
     background-color: #4f3166;
     align-items: center;
     justify-content: space-between;
     padding: 2%;
 }
-.navmenu .menu-link{
+.nav-menu .menu-link{
     color: #fff;
     text-decoration: none;
     font-style: italic;
 }
-.navmenu #sign{
-   display: flex; 
+.nav-menu #sign{
+    display: flex; 
+    color: #fff;
+    font-style: italic;
+    justify-content:space-between;
+    width: 13%;
+
 }
 /*colors{
     red: d32c0e;
@@ -88,8 +100,44 @@ body{
     justify-content: center;
 }
 .footer{
-    height: 130px;
-    background-color: #eaeaea;
+    height: 40%;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .menu-bottom{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.menu-bottom .menu-bottom-link{
+    text-decoration: none;
+    font-family: DroidSans;
+    color: #d32c0e;
+    padding: 3%;
+}
+.newsletter{
+    margin: 2% 0;
+    background-color: #fff;
+    border-radius: 2%;
+    height: 55%;
+    padding: 1%;
+}
+.email{
+    font-size: 14px;
+    padding: 6px 10px 6px;
+    border: 1.5px solid #8a8787;
+    border-radius: 5px;
+}
+.submit{
+    background-color: #d32c0e;
+    color:#fff;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 10px 6px;
+    width: 30%;
+    height: 30px;
 }
 .red{
     color: #d32c0e;
